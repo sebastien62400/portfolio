@@ -1,0 +1,134 @@
+/* font-family: 'Lalezar', cursive;
+font-family: 'Roboto', sans-serif; */
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #161A1D;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+::selection{
+    background: #660708;
+    color: #B1A7A6;
+}
+
+h1{
+    color: #fff;
+    text-decoration: 4px underline #A4161A;
+    text-underline-offset: 4px;
+    font-family: 'Lalezar', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+li{
+    list-style: square;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.back-button a{
+    text-decoration: none;
+    border: 3px solid #0B090A;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    color: #0B090A;
+    font-size: 2rem;
+    margin-top: 15px;
+    transition: 0.25s;
+}
+
+.back-button a:hover{
+    padding: 5px 30px;
+    border: 3px solid #E5383B;
+    color: #E5383B;
+    box-shadow: 0 0 8px #E5383B;
+    transition: 0.25s;
+}
+
+.content a{
+    text-decoration: 3px underline #E5383B;
+    text-underline-offset: 3px;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.content a:hover{
+    text-underline-offset: 7px;
+    transition: 0.25s;
+}
+
+footer{
+    width: 100vw;
+    background-color: #0B090A;
+    padding: 15px 0;
+}
+
+.content-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.social-media{
+    flex-direction: column;
+}
+
+footer{
+    width: 100vw;
+    background-color: #0B090A;
+    padding: 15px 0;
+}
+
+footer h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+footer a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: 2px underline #E5383B;
+}
+
+footer a:hover{
+    text-underline-offset: 4px;
+    color: #D3D3D3;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+.center-footer-line{
+    width: 3px;
+    height: 150;
+    background-color: #161A1D;
+}
