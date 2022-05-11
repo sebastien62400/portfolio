@@ -12,4 +12,4 @@ This portefolio is coded by using HTML, CSS & Javascript, with no library.
 
 Github: https://github.com/sebastien62400
 
-Instagram: sebastien010703
+Instagram: https://www.instagram.com/sebastien010703/
