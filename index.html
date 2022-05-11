@@ -11,8 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scripts/cursor.css">
+    <link rel="stylesheet" href="./scripts/default.css">
 </head>
 <body>
+    <div class="drop-down">
+        <button id="button-drop-down">Download CV</button>
+        <div class="drop-down-content">
+            <a href="#" download>Français</a>
+            <a href="#" download>English</a>
+        </div>
+    </div>
+
     <div class="container">
         <div class="item">
             <li><a href="./public/about.html" id="about">About</a></li>
@@ -22,10 +31,12 @@
         </div>
     </div>
     
+
     <div class="edit-cursor"></div>
-    
+
     <script src="./scripts/app.js"></script>
-    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <!-- https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff -->
 </body>
 </html>

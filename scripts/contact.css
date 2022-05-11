@@ -49,11 +49,22 @@ h1{
     text-align: center;
 }
 
-input{
+textarea{
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 170px;
+    min-height: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
     border: none;
     user-select: none;
     outline: none;
-    display: flex;
     justify-content: center;
 }
 
@@ -65,6 +76,10 @@ input[type=text], input[type=email]{
 }
 
 button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
     width: 100px;
     height: 30px;
     background-color: #660708;

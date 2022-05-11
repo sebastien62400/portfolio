@@ -1,5 +1,6 @@
 body{
     cursor: none;
+    overflow: hidden;
 }
 
 .edit-cursor{
@@ -13,4 +14,22 @@ body{
     top: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        cursor: auto;
+    }
+    
+    a:hover{
+        cursor: pointer;
+    }
+
+    .edit-cursor{
+        display: none;
+    }
+
+    .drop-down button:hover{
+        cursor: pointer;
+    }
 }
