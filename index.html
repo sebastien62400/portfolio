@@ -14,11 +14,19 @@
     <link rel="stylesheet" href="./scripts/default.css">
 </head>
 <body>
+    <div class="error-project-background" role="dialog" aria-modal="true">
+        <div class="error-project">
+            <h1>WARNING</h1>
+            <p>You can't see this page because there is no project yet. Please try again later.</p>
+            <button class="close-error" onclick="close()">All right</button>
+        </div>
+    </div>
+
     <div class="drop-down">
         <button id="button-drop-down">Download CV</button>
         <div class="drop-down-content">
-            <a href="#" download>Français</a>
-            <a href="#" download>English</a>
+            <a href="./public/french.txt" download>Français</a>
+            <a href="./public/english.txt" download>English</a>
         </div>
     </div>
 
@@ -30,13 +38,16 @@
             <li><a href="./public/contact.html" id="contact">Contact</a></li>
         </div>
     </div>
-    
+
+
 
     <div class="edit-cursor"></div>
+
+
+    <!-- scripts -->
 
     <script src="./scripts/app.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <!-- https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181b-e5383b-b1a7a6-d3d3d3-f5f3f4-ffffff -->
 </body>
 </html>

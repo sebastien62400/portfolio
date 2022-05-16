@@ -75,7 +75,7 @@ input[type=text], input[type=email]{
     padding: 5px 15px;
 }
 
-button{
+input[type=submit]{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -91,7 +91,7 @@ button{
     transition: 0.25s;
 }
 
-button:hover{
+input[type=submit]:hover{
     width: 125px;
     transition: 0.25s;
 }
@@ -119,6 +119,38 @@ button:hover{
     box-shadow: 0 0 8px #E5383B;
     transition: 0.25s;
 }
+
+.message_send{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: #B1A7A6;
+    padding: 25px 20px;
+    transition: .5s;
+    display: none;
+}
+
+.message_send:hover{
+    box-shadow: 0 0 8px black;
+    transition: .25s;
+}
+
+.message_send button{
+    cursor: pointer;
+    margin-top: 5px;
+    background: #E5383B;
+    padding: 5px 20px;
+    transition: .5s;
+}
+
+.message_send button:hover{
+    background: #A4161A;
+    color: #fff;
+    transition: .25s;
+}
+
+
+/* footer */
 
 footer{
     width: 100vw;

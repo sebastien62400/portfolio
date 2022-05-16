@@ -10,24 +10,31 @@ function mouse_cursor(e) {
     cursor.style.top = e.pageY + 'px';
 }
 
-// error project on click
-
-let project = document.getElementById('project');
-
-project.addEventListener('click', () => {
-    alert(`This page is in work, please wait the end of the development to get the access to this page.`);
-});
-
 // Dropdown menu anim
 
 const dropDownBtn = document.getElementById('button-drop-down');
 const dropDownMenu = document.querySelector('.drop-down-content');
 
-dropDownBtn.addEventListener('mouseover', () => {
-    const TL = gsap.timeline({paused: true});
 
+dropDownBtn.addEventListener('mouseover', () => {
+    
+    const TL = gsap.timeline({paused: true});
     TL
     .staggerFrom(dropDownMenu, .5,{opacity: 0}, 0.2);
-
+    
     TL.play();
 });
+
+// Error project
+
+const errorProject = document.querySelector('.error-project-background');
+const closeError = document.querySelector('.close-error');
+const project = document.getElementById('project');
+
+project.addEventListener('click', () => {
+    errorProject.style.display = "block";
+});
+
+closeError.addEventListener('click', () => {
+    errorProject.style.display = "none";
+})
