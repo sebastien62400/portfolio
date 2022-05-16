@@ -6,7 +6,7 @@ My palet of color : https://coolors.co/palette/0b090a-161a1d-660708-a4161a-ba181
 === About ===
 
 This is my first portefolio. A simple project where I learn the bases of web development.
-This portefolio is coded by using HTML, CSS & Javascript, with no library.
+This portefolio is coded by using HTML, CSS & Javascript, library : gsap.
 
 === Social ===
 
