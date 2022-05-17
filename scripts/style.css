@@ -108,6 +108,16 @@ a, button{
     right: 0;
     bottom: 0;
     display: none;
+    opacity: 1;
+    z-index: 1;
+}
+
+.error-project:hover{
+    cursor: auto;
+}
+
+.error-project button:hover{
+    cursor: pointer;
 }
 
 .error-project{
@@ -135,4 +145,10 @@ a, button{
     margin-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    transition: .5s;
+}
+
+.error-project button:hover{
+    padding: 5px 30px;
+    transition: .25s;
 }
